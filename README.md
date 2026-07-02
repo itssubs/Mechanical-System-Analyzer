@@ -1,2 +1,4 @@
 # Mechanical-System-Analyzer
-The program below is a mechanical system analyzer what it does is solve spring mass damper system based on the user describe parameters
+The program below is a mechanical system analyzer what it does is solve spring mass damper system based on the user describe parameters.
+The sytem utilizes scipy library to solve the initial value problem and minimize the Maximum Amplitude by optimizing the damping coefficient.
+The program asks user for the mass, stiffness, damping, maximum operating speed and the step increment of the speed along with the unbalanced mass in the system and the eccentricity of the system. Based on these data the program first solves the spring mass damper system for rotating body for different values of speed then it minimizes the damping coefficient keeping other parameters constant, and simulate for the critical speed. It then prints the result and plots the graphs. The graphs are the velocity and displacement graph for the critical condition, and a comparison graph for the unoptimized damping and the optimized damping vs the Amplitude of the system.
